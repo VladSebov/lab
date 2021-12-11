@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторная работа</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="st.css">
+</head>
+
+<body>
+<table class=table>
+  <thead>
+  <caption><h1>База данных студентов</h1></caption>
+  <tr>
+    <th>ФИО</th>
+    <th>Дата рождения</th>
+    <th>Группа</th>
+    <th>Телефон</th>
+    <th>
+      <button type="button" class="add button">Добавить студента</button>
+    </th>
+  </tr>
+
+  </thead>
+  <tbody id="table">
+  </tbody>
+</table>
+
+
+<!--<div class="modal" id="remove">-->
+<form id="remove" class="form2" name="form2">
+  <caption><h2>Удаление студента</h2></caption>
+  <p></p>
+  <button type="button" class="submit-delete button" data-func="remove">Удалить</button>
+  <button type="button" class="close-delete button" data-id="remove">Отменить</button>
+  </center>
+  <button type="button" class="close close2 button" data-id="remove">X</button>
+</form>
+<!--</div>-->
+
+<div class="add-form form1">
+  <form autocomplete="off">
+    <caption><h2>Добавление студента</h2></caption>
+    <button type="button" class="close close1 button" data-id="edit">X</button>
+    <p><b>Введите личные данные студента</b></p>
+    <input type="text" class="name" placeholder="ФИО"> <br>
+    <p><b>Дата:</b></p>
+      <input type="date" class="date" placeholder="Дата рождения"> <br>
+    <p><b>Группа</b></p>
+    <input type="text" class="group" placeholder="Группа"> <br>
+    <p><b>Телефон</b></p>
+    <input type="text" class="phone" placeholder="Телефон"> <br> <br>
+    <button type="button" class="close button" data-id="edit">Отменить</button>
+    <button type="button" class="submit-add button" data-func="submit">Сохранить</button>
+
+  </form>
+</div>
+
+<div class="change-form form1">
+  <form autocomplete="off">
+    <caption><h2>Изменение студента</h2></caption>
+    <button type="button" class="close close1 button" data-id="edit">X</button>
+    <p><b>Введите личные данные студента</b></p>
+    <input type="text" class="name" placeholder="ФИО"> <br>
+    <p><b>Дата:</b></p>
+      <input type="date" class="date" placeholder="Дата рождения"> <br>
+    <p><b>Группа</b></p>
+    <input type="text" class="group" placeholder="Группа"> <br>
+    <p><b>Телефон</b></p>
+    <input type="text" class="phone" placeholder="Телефон"> <br> <br>
+    <button type="button" class="close button" data-id="edit">Отменить</button>
+    <button type="button" class="submit-change button" data-func="submit">Сохранить</button>
+  </form>
+</div>
+
+</body>
+<script src="app.js"></script>
+</html>
